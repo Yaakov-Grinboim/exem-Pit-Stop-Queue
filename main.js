@@ -15,8 +15,6 @@ console.log("race: " + race.raceName)
 console.log("lap:  " + race.currentLap + "/" + race.totalLaps)
 console.log("Total cars in race: " + race.cars.length);
 
-const function (){
-    statusDone = (race) => race.status ? "done" statusDone++ 
-}
-
-console.log(statusDone);
+// const cars = race.cars
+// const statusDone = (cars) => cars.filter(cars.status === "done") 
+// console.log(statusDone);
