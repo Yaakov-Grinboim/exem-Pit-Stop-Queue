@@ -8,7 +8,6 @@ export async function writingDataFromApi(apiPath) {
     try {
         let raceDataReceiving = await fetch(apiPath);
         let raceData = await raceDataReceiving.json();
-        console.log(raceData);
         return raceData;
     } catch (error) {
         console.error(error);
@@ -27,9 +26,10 @@ export async function writeToFile(filePath, data) {
 export async function readFromDataFile(filePath) {
     try {
         let dataFromFile = await readFile(filePath, "utf-8");
+        console.log("\nLoading queue data...")
         let data = JSON.parse(dataFromFile);
         return data
     } catch (error) {
         console.log(error);
-    }
+    } 
 }
